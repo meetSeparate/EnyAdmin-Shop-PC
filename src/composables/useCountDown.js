@@ -1,7 +1,7 @@
-import {computed, ref} from 'vue'
+import {computed, onUnmounted, ref} from 'vue'
 import dayjs from "dayjs";
 
-export const useCutDown = () => {
+export const useCountDown = () => {
     let timer = null;
     const time = ref(0)
 
@@ -12,9 +12,13 @@ export const useCutDown = () => {
     const start = (currentTime) => {
         time.value = currentTime
         timer = setInterval(() => {
-            time.value --
+            time.value--
         }, 1000)
     }
+
+    onUnmounted(() => {
+        timer && clearInterval(timer)
+    })
 
     return {
         formatTime,

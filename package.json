@@ -8,13 +8,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vueuse/core": "^10.1.2",
+    "axios": "^1.4.0",
+    "dayjs": "^1.11.8",
     "element-plus": "^2.3.5",
     "pinia": "^2.0.36",
+    "pinia-plugin-persistedstate": "^3.1.0",
+    "unplugin-element-plus": "^0.7.1",
     "vue": "^3.3.2",
     "vue-router": "^4.2.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
+    "sass": "^1.62.1",
     "unplugin-auto-import": "^0.16.2",
     "unplugin-vue-components": "^0.24.1",
     "vite": "^4.3.5"
