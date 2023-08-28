@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>防抖实现</title>
+</head>
+<body>
+<div class="box" style="width: 500px; height: 500px; background-color: #1dc779; text-align: center; font-size: 100px;color: #999; line-height: 500px;">
+</div>
+
+<script>
+    let box = document.querySelector('.box')
+
+    const mouseMove = function () {
+        box.innerHTML++
+    }
+
+    const debounce = function (fn, t) {
+        let timer;
+
+        return function () {
+            if (timer) clearTimeout(timer);
+            timer = setTimeout(() => {
+                fn()
+            }, t)
+        }
+    }
+
+    box.addEventListener('mousemove', debounce(mouseMove, 500))
+</script>
+</body>
+</html>
