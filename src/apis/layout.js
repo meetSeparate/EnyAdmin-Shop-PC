@@ -1,7 +1,7 @@
-import http from '@/utils/http'
+import request from '@/utils/request'
 
 export function getCategoryAPI() {
-    return http({
-        url: '/home/category/head'
+    return request({
+        url: '/api/categoryHead/'
     })
 }

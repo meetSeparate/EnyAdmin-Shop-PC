@@ -4,7 +4,6 @@ import HeaderCart from "@/views/Layout/components/HeaderCart.vue";
 
 // Pinia获取数据
 const categoryStore = useCategoryStore()
-
 </script>
 <template>
   <header class='app-header'>
