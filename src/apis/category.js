@@ -1,7 +1,7 @@
-import request from '@/utils/http'
+import request from '@/utils/request'
 
 export const getCategoryApi = (id) => request({
-    url: '/category',
+    url: '/api/categoryDetails',
     method: 'get',
     params: {
         id: id

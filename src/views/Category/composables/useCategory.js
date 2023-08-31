@@ -14,7 +14,7 @@ export const useCategory = () => {
     // 获取数据方法
     const getCategoryData = async (id = route.params.id) => {
         const res = await getCategoryApi(id)
-        categoryData.value = res.result
+        categoryData.value = res.data
     }
 
     onMounted(() => getCategoryData())
