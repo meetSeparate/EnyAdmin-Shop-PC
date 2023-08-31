@@ -44,7 +44,7 @@ const doLogin = () => {
     if (valid) {
       // valid为true表示表单校验全部通过，执行登录操作
       const {account, password} = form.value
-      await userStore.getUserInfo({account, password})
+      await userStore.getUserInfo({username: account, password})
       ElNotification({
         title: 'Success',
         message: '登录成功！',
@@ -112,7 +112,7 @@ const doLogin = () => {
           <a href="javascript:;">搜索推荐</a>
           <a href="javascript:;">友情链接</a>
         </p>
-        <p>CopyRight &copy; 小兔鲜儿</p>
+        <p>CopyRight &copy; 张恩宇</p>
       </div>
     </footer>
   </div>
@@ -137,7 +137,7 @@ const doLogin = () => {
       height: 132px;
       width: 100%;
       text-indent: -9999px;
-      background: url("@/assets/images/logo.png") no-repeat center 18px / contain;
+      background: url("@/assets/images/logo.svg") no-repeat center 18px / contain;
     }
   }
 

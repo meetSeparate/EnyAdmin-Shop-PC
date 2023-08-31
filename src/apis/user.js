@@ -1,7 +1,7 @@
-import request from '@/utils/http'
+import request from '@/utils/request'
 
 export const login = (data) => request({
-    url: '/login',
+    url: '/api/login/',
     method: 'post',
     data: data
 })
