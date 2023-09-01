@@ -7,7 +7,7 @@ const newList = ref([])
 
 const getNewList = async () => {
   const res = await getNewAPI()
-  newList.value = res.result
+  newList.value = res.data
 }
 
 onMounted(() => {

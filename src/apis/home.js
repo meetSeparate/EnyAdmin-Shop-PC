@@ -18,8 +18,8 @@ export function getBannerAPI(distributionSite) {
  * @return {*}
  */
 export const getNewAPI = () => {
-    return http({
-        url: '/home/new',
+    return request({
+        url: '/api/new',
         method: 'get'
     })
 }
@@ -30,7 +30,7 @@ export const getNewAPI = () => {
  * @return {*}
  */
 export const getHotAPI = () => {
-    return http.get('/home/hot')
+    return request.get('/api/hot')
 }
 
 /**
