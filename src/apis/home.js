@@ -39,8 +39,8 @@ export const getHotAPI = () => {
  * @return {*}
  */
 export const getGoodsAPI = () => {
-    return http({
-        url: '/home/goods',
+    return request({
+        url: '/api/good',
         method: 'get'
     })
 }

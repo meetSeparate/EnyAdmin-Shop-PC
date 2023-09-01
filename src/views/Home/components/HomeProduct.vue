@@ -9,7 +9,7 @@ const goodsProduct = ref([])
 
 const getGoodsList = async () => {
   const res = await getGoodsAPI()
-  goodsProduct.value = res.result
+  goodsProduct.value = res.data
 }
 
 onMounted(() => {
