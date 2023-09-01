@@ -13,6 +13,7 @@ const cartStore = useCartStore()
 // 获取数据
 const getGoods = async () => {
   let res = await getDetail(route.params.id)
+  console.log(res)
   goods.value = res.result
 }
 
