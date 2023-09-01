@@ -1,8 +1,9 @@
 import http from '../utils/http'
+import request from '../utils/request'
 
 export function getBannerAPI(distributionSite) {
-    return http({
-        url: '/home/banner',
+    return request({
+        url: '/api/banner',
         method: 'get',
         params: {
             distributionSite: distributionSite

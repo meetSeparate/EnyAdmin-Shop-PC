@@ -11,7 +11,7 @@ export const useBanner = () => {
     // 获取轮播图数据
     const getBannerList = async () => {
         const res = await getBannerAPI('2')
-        bannerList.value = res.result
+        bannerList.value = res.data
     }
 
     onMounted(() => getBannerList())
