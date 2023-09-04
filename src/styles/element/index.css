@@ -1,0 +1,40 @@
+/* Error: Can't find stylesheet to import.
+ *    ,
+ * 2  | / @forward 'element-plus/theme-chalk/src/common/var.scss' with (
+ * 3  | |   $colors: (
+ * 4  | |     'primary': (
+ * 5  | |       // 主色
+ * 6  | |       'base': #27ba9b,
+ * 7  | |     ),
+ * 8  | |     'success': (
+ * 9  | |       // 成功色
+ * 10 | |       'base': #1dc779,
+ * 11 | |     ),
+ * 12 | |     'warning': (
+ * 13 | |       // 警告色
+ * 14 | |       'base': #ffb302,
+ * 15 | |     ),
+ * 16 | |     'danger': (
+ * 17 | |       // 危险色
+ * 18 | |       'base': #e26237,
+ * 19 | |     ),
+ * 20 | |     'error': (
+ * 21 | |       // 错误色
+ * 22 | |       'base': #cf4444,
+ * 23 | |     ),
+ * 24 | |   ),
+ * 25 | | );
+ *    | '-^
+ *    '
+ *   index.scss 2:1  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a    \2577 \a 2  \2502  \250c  @forward 'element-plus/theme-chalk/src/common/var.scss' with (\a 3  \2502  \2502    $colors: (\a 4  \2502  \2502      'primary': (\a 5  \2502  \2502        // \4e3b \8272 \a 6  \2502  \2502        'base': #27ba9b,\a 7  \2502  \2502      ),\a 8  \2502  \2502      'success': (\a 9  \2502  \2502        // \6210 \529f \8272 \a 10 \2502  \2502        'base': #1dc779,\a 11 \2502  \2502      ),\a 12 \2502  \2502      'warning': (\a 13 \2502  \2502        // \8b66 \544a \8272 \a 14 \2502  \2502        'base': #ffb302,\a 15 \2502  \2502      ),\a 16 \2502  \2502      'danger': (\a 17 \2502  \2502        // \5371 \9669 \8272 \a 18 \2502  \2502        'base': #e26237,\a 19 \2502  \2502      ),\a 20 \2502  \2502      'error': (\a 21 \2502  \2502        // \9519 \8bef \8272 \a 22 \2502  \2502        'base': #cf4444,\a 23 \2502  \2502      ),\a 24 \2502  \2502    ),\a 25 \2502  \2502  );\a    \2502  \2514 \2500 ^\a    \2575 \a   index.scss 2:1  root stylesheet";
+}
