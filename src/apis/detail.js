@@ -1,7 +1,15 @@
 import request from '@/utils/http'
+import request1 from '@/utils/request'
 
 export const getDetail = (id) => request({
     url: '/goods',
+    params: {
+        id
+    }
+})
+
+export const getDetails = (id) => request1({
+    url: '/api/goodsDetail',
     params: {
         id
     }

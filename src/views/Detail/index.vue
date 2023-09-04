@@ -1,5 +1,5 @@
 <script setup>
-import {getDetail} from "@/apis/detail";
+import {getDetail, getDetails} from "@/apis/detail";
 import {useRoute} from "vue-router";
 import {onMounted, ref} from "vue";
 import HotDetail from "@/views/Detail/components/HotDetail.vue";
@@ -59,6 +59,7 @@ const addCart = () => {
 }
 
 onMounted(() => {
+  getDetails(1)
   getGoods()
 })
 </script>
