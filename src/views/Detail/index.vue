@@ -13,6 +13,7 @@ const cartStore = useCartStore()
 // 获取数据
 const getGoods = async () => {
   let res = await getDetail(route.params.id)
+  console.log(res.result)
   goods.value = res.result
 }
 
@@ -120,6 +121,15 @@ onMounted(() => {
                   <dd>12月好物放送，App领券购买直降120元</dd>
                 </dl>
                 <dl>
+                  <dt>保障</dt>
+                  <dd>
+                    <span>Eny自营</span>
+                    <span>Eny发货</span>
+                    <span>7天价格保护</span>
+                    <span>企业信息</span>
+                  </dd>
+                </dl>
+                <dl>
                   <dt>服务</dt>
                   <dd>
                     <span>无忧退货</span>
@@ -139,7 +149,7 @@ onMounted(() => {
 
               <!-- 按钮组件 -->
               <div>
-                <el-button size="large" class="btn" @click="addCart">
+                <el-button size="large" class="btn" @click="addCart" type="primary">
                   加入购物车
                 </el-button>
               </div>
