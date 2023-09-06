@@ -1,7 +1,7 @@
 <template>
   <div class="goods-sku">
     <dl v-for="item in goods.specs" :key="item.id">
-      <dt>规格</dt>
+      <dt>{{item.name}}</dt>
       <dd>
         <template v-for="val in item.values" :key="val.name">
           <img :class="{ selected: val.selected, disabled: val.disabled }" @click="clickSpecs(item, val)"
