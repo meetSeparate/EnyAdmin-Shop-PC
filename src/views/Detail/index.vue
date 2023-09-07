@@ -13,7 +13,6 @@ const cartStore = useCartStore()
 // 获取数据
 const getGoods = async () => {
   let res = await getDetail(route.params.id)
-  console.log(res.result)
   goods.value = res.result
 }
 
@@ -88,7 +87,7 @@ onMounted(() => {
               <ul class="goods-sales">
                 <li>
                   <p>销量人气</p>
-                  <p> {{goods.salesCount}} </p>
+                  <p> {{goods.salesCount}}</p>
                   <p><i class="iconfont icon-task-filling"></i>销量人气</p>
                 </li>
                 <li>
